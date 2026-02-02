@@ -1,8 +1,8 @@
 const name_list = ['Angie', 'Casey', 'Sehaj', 'Joe', 'Nianna', 'Tinku', 'Roberto', 'Aaron', 'Canyon', 'Logan']
-const h1 = document.querySelector("h1")
 
-let randomSelector = function (list) {
-    return Math.floor(Math.random() * list.length)
+randomSelector(list)
+{
+    var names = list
+    var current_name = Math.floor(Math.random() * list.length)
+    document.getElementById("name").innerHTML = "random";
 }
-
-const current_name = randomSelector(name_list)
