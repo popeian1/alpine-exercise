@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Alpine Exercise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+    <body>
+        <h1 id="header">Angie's Random Name Selector...</h1>
+        <div x-data="{username: ['Test','Another']}">
+            <button @click="alert('Hello World1')">Pick Name</button>
+            <h1 x-text="username"></h1>
+        </div>
+        <script src="utils.js"></script>
+    </body>
+</html>
