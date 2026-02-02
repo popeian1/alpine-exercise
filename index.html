@@ -10,7 +10,7 @@
     <body>
         <h1 id="header">Angie's Random Name Selector...</h1>
         <div x-data="{username: ['Test','Another']}">
-            <button @click="alert('Hello World1')">Pick Name</button>
+            <button @click="randomSelector(username)">Pick Name</button>
             <h1 x-text="username"></h1>
         </div>
         <script src="utils.js"></script>
