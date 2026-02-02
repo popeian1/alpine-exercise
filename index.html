@@ -9,9 +9,9 @@
     </head>
     <body>
         <h1 id="header">Angie's Random Name Selector...</h1>
-        <div x-data="{username: ['Test','Another']}">
-            <button @click="randomSelector(username)">Pick Name</button>
-            <h1 x-text="username"></h1>
+        <div x-data="{username: name_list}">
+            <button @click="const name = randomSelector(name_list);">Pick Name</button>
+            <h1 x-text="name"></h1>
         </div>
         <script src="utils.js"></script>
     </body>
